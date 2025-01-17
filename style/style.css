@@ -16,6 +16,15 @@
 .display-flex{
     display: flex;
 }
+.healthy-card1{
+    background-color: rgba(79, 157, 166, 0.1);
+}
+.healthy-card2{
+    background-color: rgba(255, 89, 89, 0.1);
+}
+.healthy-card3{
+    background-color: #b67a0b6c ;
+}
 .btn-primary{
     background-color: #FF5959;
     padding:12px 16px;
@@ -37,7 +46,7 @@
 }
 .text-gray{
     color:#707070;
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 28px;
 }
 .text-white{
@@ -76,18 +85,19 @@
 }
 /* main styles here  */
 .donate-today{
-    max-width: 650px;
+    max-width:691px;
+    height: 130px;
     text-align: center;
     margin:0 auto;
-}
-.donate-title{
     margin-top: 130px;
+    
 }
+
 .donate-card{
     display: grid;
     grid-template-columns: repeat(5,1fr);
+    margin: 50px 250px;
     gap:15px;
-    margin: 50px 300px;
     place-items: center;
     
 }
@@ -110,14 +120,23 @@
 .donate-tk{
     color: #FF5959;
 }
+
+
 .bg-color{
     background-color: rgba(255, 89, 89, 10%);
     border: 2px solid rgba(255, 89, 89, 1);
 }
+/* add amount section here  */
 .add-amount{
     text-align: center;
-    margin: 50px 375px;
+    margin:0 auto;
 }
+hr{
+    margin: auto;
+    max-width:765px;
+    color:#DADADA;
+}
+
 .add-ammount-title{
     margin-bottom: 10px;
     font-size: 1.25rem;
@@ -126,7 +145,48 @@
 .button{
     margin-top: 30px;
 }
+/* our donate section styles  */
+.our-donate{
+    max-width:691px;
+    height: 130px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 130px;
+}
+.our-donate>h1{
+    margin: 10px;
+}
 
+/* healthy card section styles here  */
+.healthy-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:46px;
+    margin: 50px 100px;
+    place-items: center;
+}
+.healty-container{
+    width:360px;
+    height: 352px;
+    border-radius: 5px;
+}
+.healthy-img>img{
+    width:58px;
+    height:49px;
+    margin-top: 63px;
+    margin-left: 22px;
+}
+
+.healty-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 22px;
+    margin-top: 30px;
+}
+.healthy-descp{
+    margin-left: 22px;
+    margin-top: 16px;
+}
 
 
 /* media query responsive  */
@@ -135,10 +195,8 @@
         width: 100%;
         margin: 20px;
     }
-    .donate-title{
-        margin: 20px;
-    }
-    .donate-card{
+    
+    .donate-card,.healthy-card{
         grid-template-columns: repeat(1,1fr);
         margin: 20px;
     }
@@ -154,7 +212,11 @@
     }
     .donate-card{
         grid-template-columns: repeat(2,1fr);
-        margin: 10px;
+        margin: 20px;
+    }
+    .healthy-card{
+        grid-template-columns: repeat(1,1fr);
+        margin: 20px;
     }
     .add-amount{
         margin: 20px;
