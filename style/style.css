@@ -82,6 +82,8 @@
 }
 .header-description{
     margin-bottom: 30px;
+    max-width: 700px;
+    text-align: center;
 }
 /* main styles here  */
 .donate-today{
@@ -130,6 +132,7 @@
 .add-amount{
     text-align: center;
     margin:0 auto;
+    text-decoration:1px underline;
 }
 hr{
     margin: auto;
@@ -187,7 +190,40 @@ hr{
     margin-left: 22px;
     margin-top: 16px;
 }
-
+/* Their lives depend on your donation  */
+.live-donate{
+   
+    margin: 0 auto;
+    max-width: 1160px;
+    margin-top: 130px;
+}
+.live-container,.live-deffend{
+    align-items: center;
+    gap: 83px;
+    margin-top: 80px;
+} 
+.deppend-image{
+    max-width: 456px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.live-donate-content{
+    max-width: 600px;
+    height: 374px;
+    
+}
+.live-title{
+    font-size: 2.9rem;
+    margin-bottom:20px;
+    font-weight: bold;
+}
+.live-description{
+    margin-bottom: 30px;
+    line-height: 28px;
+    color:#707070;
+    
+}
 
 /* media query responsive  */
 @media screen and (max-width:576px) {
@@ -201,8 +237,21 @@ hr{
         margin: 20px;
     }
     .add-amount{
-        margin: 10px;
+        margin: 20px;
     }
+    .live-container{
+        flex-direction: column-reverse;
+        margin: 20px;
+    }
+    .live-deffend{
+        flex-direction: column;
+        margin: 20px;
+    }
+    .live-donate-content{
+        text-align: center;
+    }
+    
+    
 }
 /* medium media query responsive  */
 @media screen and (min-width:576px) and (max-width:992px) {
